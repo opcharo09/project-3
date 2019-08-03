@@ -7,29 +7,31 @@ const PORT = process.env.PORT || 3001;
 const app = express();
 
 // Define middleware here bodyparser
-app.use(bodyParser.urlencoded({
-  extended: false
-}));
-app.use(bodyParser.json());
+// app.use(bodyParser.urlencoded({
+//   extended: false
+// }));
+// app.use(bodyParser.json());
 //express
-app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
+ app.use(express.urlencoded({ extended: true }));
+ app.use(express.json());
 // database
-const db= require("./config/keys").mongoURI;
+// const db= require("./config/keys").mongoURI;
 
-mongoose
-  .connect(
-    db,
-    { useNewUrlParser: true }
-  )
-  .then(() => console.log("MongoDB successfully connected"))
-  .catch(err => console.log(err));
+// mongoose
+//   .connect(
+//     db,
+//     { useNewUrlParser: true }
+//   )
+//   .then(() => console.log("MongoDB successfully connected"))
+//   .catch(err => console.log(err));
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
 
-
+mongoose.connect(
+  process.env.MONGODB_URI || "mongodb://user1:opc1991@ds259347.mlab.com:59347/heroku_9qgfklrn"
+)
 
 
 app.listen(PORT, () => {
