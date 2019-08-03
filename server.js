@@ -10,6 +10,9 @@ app.use(express.json());
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
+//mlab connection
+mongoose.connect
+(process.env.MONGODB_URI ||"mongodb://user1:opc1991@ds259347.mlab.com:59347/heroku_9qgfklrn");
 
 // Define API routes here
 
