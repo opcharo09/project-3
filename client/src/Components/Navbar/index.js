@@ -8,11 +8,11 @@ import {
  } from 'reactstrap';
 
 export default class navbar extends React.Component {
-  constructor(props) {
-    super(props);
+  
+
 
   
-  }
+  
   render() {
     return (
       <div>
