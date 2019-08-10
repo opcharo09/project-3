@@ -6,9 +6,9 @@ export default class SearchForm extends React.Component {
   render() {
     return (
       <Form>
-        <FormGroup>
-          <Label for="exampleText">Search for Photographers and photo services in your area </Label>
-          <Input type="Text" name="Text" id="exampleText" placeholder="Enter zip code" />
+        <FormGroup className="form">
+          <Label className="label" for="exampleText">Search for Photographers and photo services in your area </Label>
+          <Input classname="input" type="Text" name="Text" id="exampleText" placeholder="Enter zip code" />
         </FormGroup>
     {/* add on click function to button */}
         <Button>Submit</Button> 

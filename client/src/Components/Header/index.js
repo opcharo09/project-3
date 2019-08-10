@@ -4,7 +4,7 @@ import SearchForm from "../SearchForm";
 function Header(){
 
 return(
-<header>
+<header className="mainheader">
     <SearchForm></SearchForm>
 
 
