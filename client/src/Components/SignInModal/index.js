@@ -1,32 +1,37 @@
-import React from 'react';
-// import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
-import UserLogin from "../UserLogin/index";
+// import React from 'react';
+// import { Button, Modal, ModalBody,  } from 'reactstrap';
+// import Login from '../Login';
 
-class SignInModel extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      modal: false
-    };
+// class SignInModal extends React.Component {
+//   constructor(props) {
+//     super(props);
+//     this.state = {
+//       modal: false
+//     };
 
-    this.toggle = this.toggle.bind(this);
-  }
+//     this.toggle = this.toggle.bind(this);
+//   }
 
-  toggle() {
-    this.setState(prevState => ({
-      modal: !prevState.modal
-    }));
-  }
+//   toggle() {
+//     this.setState(prevState => ({
+//       modal: !prevState.modal
+//     }));
+//   }
 
-  render() {
-    return (
-      <div>
-        <div className= "modalcontainer">
-          <UserLogin/>
-        </div>
-      </div>
-    );
-  }
-}
+//   render() {
+//     return (
+//       <div>
+//         <Button color="danger" onClick={this.toggle}>{this.props.buttonLabel}</Button>
+//         <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
+          
+//           <ModalBody>
+//            <Login></Login>
+//           </ModalBody>
+          
+//         </Modal>
+//       </div>
+//     );
+//   }
+// }
 
-export default SignInModel;
+// export default SignInModal;

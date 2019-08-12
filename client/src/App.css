@@ -10,6 +10,7 @@ height: 100px;
   color: rgb(241, 234, 234);
   text-align: left;
   font-size: 55px;
+
   
 
 }
@@ -39,7 +40,7 @@ height: 100px;
   background-image: url("./Images/hanny-naibaho--3savqescr8-unsplash.jpg");
   position: relative;
   background-position: center;
-  background-size: 1550px 500px;
+  background-size: 1533px 500px;
   background-repeat: no-repeat;
   height: 500px;
   text-align: center;
@@ -50,6 +51,46 @@ height: 100px;
   padding-right: 25%;
   color: antiquewhite;
   font-size: 1.7vw;
+}
+
+.breadcrumb{
+  background: black;
+  color: antiquewhite;
+}
+
+.intro{
+  background: black;
+  
+
+}
+p{
+  font-size: 1.5vw;
+  color: antiquewhite;
+  text-align: center;
+}
+
+h1{
+  text-align: center;
+  color: antiquewhite;
+}
+
+h4{
+  font-size: 2vw;
+  color: darkgoldenrod;
+}
+
+.DashWelcome{
+  color: darkgoldenrod;
+  font-size: 2vw;
+}
+
+.CardText{
+font-size: 1.5vw;
+}
+
+.footer{
+  height: 25px;
+  color: black;
 }
 
 

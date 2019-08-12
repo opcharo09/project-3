@@ -2,6 +2,10 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { logoutUser } from "../../Actions/authActions";
+import DashBody from "../DashBody";
+import Footer from "../Footer"
+// import DashNavbar from "../DashNav";
+
 class Dashboard extends Component {
   onLogoutClick = e => {
     e.preventDefault();
@@ -11,16 +15,16 @@ render() {
     const { user } = this.props.auth;
 return (
       <div style={{ height: "75vh" }} className="container valign-wrapper">
-        <div className="row">
+          <div className="row">
           <div className="col s12 center-align">
+           
             <h4>
               <b>Hello,</b> {user.name.split(" ")[0]}
-              <p className="flow-text grey-text text-darken-1">
-                You are logged into Dashboard{" "}
-               
+              <p className="DashWelcome">
+                You are logged into Dashboard{" "} 
               </p>
-            </h4>
-            <button
+            
+     <button
               style={{
                 width: "150px",
                 borderRadius: "3px",
@@ -28,13 +32,19 @@ return (
                 marginTop: "1rem"
               }}
               onClick={this.onLogoutClick}
-              className="btn btn-large waves-effect waves-light hoverable blue accent-3"
-            >
+              className="btn btn-large waves-effect waves-light hoverable blue accent-3">
               Logout
-            </button>
+     </button>
+     
+          </h4>
+      
+            <DashBody></DashBody>
+               <Footer></Footer>
           </div>
         </div>
+   
       </div>
+      
     );
   }
 }

@@ -19,19 +19,19 @@ export default class navbar extends React.Component {
         <header class="navbar">
        
   <section  class="navbar-section">
-    <a href="./" class="btn btn-link">Photo Hub</a>
+    <a href="/" class="btn btn-link">Photo Hub</a>
     
   </section>
   <section class="navbar-center">
     
   </section>
   <section class="navbar-section">
-    <Link to="/register" class="btn btn-link">Register</Link>
+    <a href="/register" class="btn btn-link">Register</a>
     <Link to="/login" class="btn btn-link">Login</Link>
   </section>
 </header>
 
-       <Route exact path="./register"component={Register}/>
+    <Route exact path="/register"component={Register}/>
     <Route exact path="/login"component={Login}/>
            
           

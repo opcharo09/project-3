@@ -1,11 +1,11 @@
 import React, {Component} from "react";
- import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
- import { Link } from "react-router-dom";
+ import { BrowserRouter as Router, Switch } from "react-router-dom";
+ //import { Link } from "react-router-dom";
  import { Provider } from "react-redux";
  import store from "./store";
 import "./App.css";
  import Navbar from "./Components/Navbar/index";
-import Header from "./Components/Header/index";
+// import Header from "./Components/Header/index";
 // import Register from "./Components/Register/index"
 // import Login from "./Components/Login/index";
 import jwt_decode from "jwt-decode";
@@ -13,7 +13,7 @@ import setAuthToken from "./Utils/setAuthToken";
 import { setCurrentUser, logoutUser } from "./Actions/authActions";
 import PrivateRoute from "./Components/Private-route/index";
 import Dashboard from "./Components/Dashboard/index"
-import ProfileIntro from "./Components/ProfileIntro";
+// import ProfileIntro from "./Components/ProfileIntro";
 
 
 // Check for token to keep user logged in
@@ -44,13 +44,13 @@ render(){
     <div >
       <Navbar />
          
-    <Header></Header>
+    {/* <Header></Header>
  
-    <ProfileIntro/>
+    <ProfileIntro/> */}
    
     
     <Switch>
-    <PrivateRoute exact path="/dashboard" component={Dashboard} />
+    <PrivateRoute  path="/dashboard" component={Dashboard} />
     </Switch>
     </div>
    </Router>
