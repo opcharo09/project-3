@@ -7,6 +7,8 @@ class ProfilePage extends Component {}
   render() {
     return (
       <Container>
+
+          <p>ProfilePage</p>
     
       </Container>
     );

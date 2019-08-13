@@ -3,8 +3,7 @@ import React from 'react';
 import Register from "../Register/index";
  import Login from "../Login/index";
 import { Link } from "react-router-dom";
-//import SignInModal from "../SignInModal/index";
-//import Button from "../Button/index";
+
 
 
 export default class navbar extends React.Component {
