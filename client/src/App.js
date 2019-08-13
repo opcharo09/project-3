@@ -50,7 +50,6 @@ render(){
       <Route exact path="/" component={Home}/>
       <Route exact path="/messages" component={Messages}/>
       <Route exact path="/profilepage" component={ProfilePage}/>
-      {/* <Route component={NoMatch} /> */}
     <PrivateRoute   exact path="/dashboard" component={Dashboard} />
     </Switch>
     </div>

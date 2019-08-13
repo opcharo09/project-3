@@ -8,7 +8,7 @@ function ProfileIntro(){
         <p> Welcome to Photo Hub. The place where you can find any photography related service, from photographer for any occation to printing,editing,
              developing, private lessons and collaboration for projects.</p>
 
-             <h1> Services you can find here!</h1>
+             <h1> Photo Services you can find here!</h1>
 
 <ul class="breadcrumb">
   <li class="breadcrumb-item">
