@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { logoutUser } from "../../Actions/authActions";
 import DashBody from "../DashBody";
-import Footer from "../Footer"
 import DashNavbar from "../DashNav";
 
 

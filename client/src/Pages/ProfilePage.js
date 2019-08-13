@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../Components/Navbar";
 import Packages from "../Components/Package&Pricing";
 import Ppics from "../Components/Ppics"
+import Reviews from "../Components/Reviews"
 
 
 export default class ProfilePage extends React.Component {
@@ -30,8 +31,10 @@ export default class ProfilePage extends React.Component {
   </div>
 </div>
 <Packages/>
+<div><br></br></div>
 <Ppics/>
-          
+<div><br></br></div>
+ <Reviews/>         
     
      </div>
     );

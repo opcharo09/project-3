@@ -4,6 +4,7 @@ import React, {Component} from "react";
  import Navbar from "../Components/Navbar/index";
 import Header from "../Components/Header/index";
 import ProfileIntro from "../Components/ProfileIntro";
+import SearchResults from "../Components/SearchResults"
 
 
 
@@ -18,6 +19,7 @@ class Home extends Component {
         <Header></Header>
      
         <ProfileIntro/>
+        <SearchResults/>
         </div>
         )
         }

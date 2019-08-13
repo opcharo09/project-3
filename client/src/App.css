@@ -105,6 +105,19 @@ font-size: 1.5vw;
   height: 50px;
 }
 
+#resultsContainer{
+  background-color: black;
+}
+
+.list{
+  color: darkgoldenrod;
+
+}
+.review{
+  width: 50%;
+  padding-left: 25px;
+}
+
 
 
 
