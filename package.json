@@ -5,7 +5,7 @@
   "engines": {
     "node": "10.15.1"
   },
-  "homepage" : "https://photo-hub.herokuapp.com/",
+  "homepage" : "https://git.heroku.com/still-plains-54615.git",
   "main": "server.js",
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
