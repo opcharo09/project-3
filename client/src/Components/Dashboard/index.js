@@ -4,7 +4,9 @@ import { connect } from "react-redux";
 import { logoutUser } from "../../Actions/authActions";
 import DashBody from "../DashBody";
 import Footer from "../Footer"
-// import DashNavbar from "../DashNav";
+import DashNavbar from "../DashNav";
+
+
 
 class Dashboard extends Component {
   onLogoutClick = e => {
@@ -14,14 +16,17 @@ class Dashboard extends Component {
 render() {
     const { user } = this.props.auth;
 return (
+
+  
       <div style={{ height: "75vh" }} className="container valign-wrapper">
+        <DashNavbar/>
           <div className="row">
           <div className="col s12 center-align">
            
             <h4>
               <b>Hello,</b> {user.name.split(" ")[0]}
               <p className="DashWelcome">
-                You are logged into Dashboard{" "} 
+                You are logged into your Dashboard{" "} 
               </p>
             
      <button

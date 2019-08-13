@@ -1,10 +1,15 @@
 import React from 'react';
 import { Card, CardText, CardBody, CardLink,
   CardTitle, Row, Col } from 'reactstrap';
+  import { Link } from "react-router-dom";
+  import { BrowserRouter as Router, Route } from "react-router-dom";
+import Messages from '../Messages';
   
+
 
 const DashBody = (props) => {
   return (
+      <Router>
     <div>
         <Row>
       <Col sm="4">
@@ -43,14 +48,16 @@ const DashBody = (props) => {
         </CardBody>
         <img  height="250px" src={require("../../Images/mathyas-kurmann-fb7yNPbT0l8-unsplash.jpg")} alt=""  />
         <CardBody>
-          <CardText>Here you can view Messeges and Request</CardText>
-          <CardLink href="./Messages">Wiew Messages</CardLink>
+          <CardText>Here you can view Messages and Request</CardText>
+          <Link to="./messages">View Messages</Link>
          
         </CardBody>
       </Card>
       </Col>
       </Row>
+      <Route exact path="/messages"component={Messages}/>
     </div>
+    </Router>
   );
 };
 

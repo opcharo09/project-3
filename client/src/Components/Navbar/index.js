@@ -26,7 +26,7 @@ export default class navbar extends React.Component {
     
   </section>
   <section class="navbar-section">
-    <a href="/register" class="btn btn-link">Register</a>
+    <Link to="/register" class="btn btn-link">Register</Link>
     <Link to="/login" class="btn btn-link">Login</Link>
   </section>
 </header>
