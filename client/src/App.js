@@ -9,6 +9,9 @@ import { setCurrentUser, logoutUser } from "./Actions/authActions";
 import PrivateRoute from "./Components/Private-route/index";
 import Dashboard from "./Components/Dashboard/index"
 import Home from "./Pages/Home";
+import Footer from "./Components/Footer";
+import Messages from "./Components/Messages";
+import ProfilePage from "./Pages/ProfilePage";
 
 
 
@@ -45,10 +48,13 @@ render(){
    
     <Switch>
       <Route exact path="/" component={Home}/>
+      <Route exact path="/messages" component={Messages}/>
+      <Route exact path="/profilepage" component={ProfilePage}/>
       {/* <Route component={NoMatch} /> */}
     <PrivateRoute   exact path="/dashboard" component={Dashboard} />
     </Switch>
     </div>
+    <Footer/>
    </Router>
     </Provider>
     );

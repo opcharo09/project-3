@@ -1,18 +1,41 @@
-import React, { Component } from "react";
+import React from "react";
+import Navbar from "../Components/Navbar";
+import Packages from "../Components/Package&Pricing";
+import Ppics from "../Components/Ppics"
 
 
-class ProfilePage extends Component {}
+export default class ProfilePage extends React.Component {
   
 
   render() {
     return (
-      <Container>
+      <div>
+        <Navbar></Navbar>
+        <div class="tile">
+  <div>
+    <img height="200px" class="s-rounded" src={require("../Images/CFL-00015.jpg")} alt=""/>
+  </div>
+  
+  <div class="tile-content">
+    <p class="tile-title">Hello my name is oscar, I am a freelance photograper that specialize in Wedding photography and film portraits</p>
+    <ul>
+      <il><button class="btn btn-primary">Request</button></il>
+      <il><button class="btn btn-primary">Message</button></il>
+      <il><button class="btn btn-primary">Quotes</button></il>
 
-          <p>ProfilePage</p>
+    </ul>
+  </div>
+  <div class="tile-action">
+    <button class="btn btn-primary">Return</button>
+  </div>
+</div>
+<Packages/>
+<Ppics/>
+          
     
-      </Container>
+     </div>
     );
   }
+}
 
 
-export default ProfilePage;

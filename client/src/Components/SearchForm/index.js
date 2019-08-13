@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button, Form, FormGroup, Label, Input, } from 'reactstrap';
 
@@ -16,4 +15,3 @@ export default class SearchForm extends React.Component {
     );
   }
 }
-

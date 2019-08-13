@@ -2,8 +2,8 @@ import React from 'react';
 import { Card, CardText, CardBody, CardLink,
   CardTitle, Row, Col } from 'reactstrap';
   import { Link } from "react-router-dom";
-  import { BrowserRouter as Router, Route } from "react-router-dom";
-import Messages from '../Messages';
+  import { BrowserRouter as Router,} from "react-router-dom";
+
   
 
 
@@ -35,7 +35,7 @@ const DashBody = (props) => {
         <img height="250px" src={require("../../Images/adrian-Gxam7Id37y0-unsplash.jpg")}alt=""  />
         <CardBody>
           <CardText>Here you can edit  and see your profile</CardText>
-          <CardLink href="#">Edit Profile</CardLink>
+          <Link to="./profilepage">View/Edit Profile</Link>
          
         </CardBody>
       </Card>
@@ -55,7 +55,7 @@ const DashBody = (props) => {
       </Card>
       </Col>
       </Row>
-      <Route exact path="/messages"component={Messages}/>
+      
     </div>
     </Router>
   );

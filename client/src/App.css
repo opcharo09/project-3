@@ -93,6 +93,18 @@ font-size: 1.5vw;
   color: black;
 }
 
+.mail{
+  color: darkgoldenrod;
+}
+
+.tile{
+  background-color: dimgrey;
+}
+
+#S-rounded{
+  height: 50px;
+}
+
 
 
 
